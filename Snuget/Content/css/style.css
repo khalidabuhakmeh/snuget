@@ -1,0 +1,15 @@
+﻿.package-info span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.package img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.package-info a {
+    color: white;
+    text-decoration: none !important;
+    
+}

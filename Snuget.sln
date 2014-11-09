@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snuget", "Snuget\Snuget.csproj", "{A49AAD10-F044-4E84-8306-FBB566B2EBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snuget.Job", "Snuget.Job\Snuget.Job.csproj", "{4C6DC99B-FB65-4C46-8CE8-0643940D27C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A49AAD10-F044-4E84-8306-FBB566B2EBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49AAD10-F044-4E84-8306-FBB566B2EBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49AAD10-F044-4E84-8306-FBB566B2EBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49AAD10-F044-4E84-8306-FBB566B2EBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C6DC99B-FB65-4C46-8CE8-0643940D27C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6DC99B-FB65-4C46-8CE8-0643940D27C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6DC99B-FB65-4C46-8CE8-0643940D27C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6DC99B-FB65-4C46-8CE8-0643940D27C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

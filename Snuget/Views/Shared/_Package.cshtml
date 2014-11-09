@@ -1,0 +1,33 @@
+﻿@model Snuget.Nuget.V2FeedPackage
+<div class="package">
+    <h3>
+        <a href="@Model.GalleryDetailsUrl">
+            <img class="pull-left" src="@( Model.IconUrl.IsEmpty() ? "https://nuget.org/Content/Images/packageDefaultIcon.png" : Model.IconUrl)" alt="@Model.Id" width="64" height="64"
+                 onerror="this.src = 'https://nuget.org/Content/Images/packageDefaultIcon.png';" />
+            @(string.IsNullOrWhiteSpace(Model.Title) ? Model.Id : Model.Title)
+        </a>
+    </h3>
+    <p>@(Model.Summary.IsEmpty() ? Model.Description : Model.Summary)</p>
+    <p class="package-info">
+        <span class="label label-default">
+            <i class="glyphicon glyphicon-download"></i> @Model.DownloadCount.ToString("####,###,###,###")
+        </span>
+        <span class="label label-default">
+            <i class="glyphicon glyphicon-wrench"></i> @Model.NormalizedVersion
+        </span>
+        @if (!Model.LicenseNames.IsEmpty()) { 
+            <span class="label label-default">
+                <i class="glyphicon glyphicon-registration-mark"></i> @Model.LicenseNames
+            </span>
+        }
+
+        <span class="label label-default">
+            <i class="glyphicon glyphicon-pencil"></i> @Model.Authors
+        </span>
+        @if (!Model.ProjectUrl.IsEmpty()) { 
+            <span class="label label-info">
+                <a href="@Model.ProjectUrl"> <i class="glyphicon glyphicon-cog"></i> Project Url</a>
+            </span>
+        }
+    </p>
+</div>

@@ -1,0 +1,33 @@
+﻿@model Snuget.Models.ViewModels.Root.ShowModel
+@{
+    ViewBag.Title = "Show";
+}
+
+<div class="jumbotron">
+    <h1>Snuget &hearts; OSS</h1>
+    <h2>@Model.TotalCount Packages Waiting</h2>
+    <form action="@Url.Action("index", "packages")" method="GET">
+        <div class="input-group">
+            <input name="query" type="text" class="form-control" placeholder="search...">
+            <span class="input-group-btn">
+                <button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <p class="lead">Snuget gives you the ability to search and sort for current nugets. Full featured functionality out of the box.</p>
+</div>
+
+<div class="row marketing">
+    <h3>Latest Packages</h3>
+    <hr />
+    @for (var i = 0; i < 2; i++)
+    {
+        var packages = Model.Latest.Skip(i * 3).Take(3).ToList();
+        <div class="col-lg-6">
+            @foreach (var package in packages)
+            {
+               @Html.Partial("_Package", package)
+            }
+        </div>
+    }
+</div>
